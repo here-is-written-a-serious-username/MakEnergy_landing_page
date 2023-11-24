@@ -1,0 +1,13 @@
+.contact-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-list__item+.contact-list__item {
+    margin-left: 22px;
+}
+
+.contact-list__contact {
+    font-weight: 500;
+    font-size: 18px;
+}
