@@ -30,10 +30,10 @@
                     <a class="logo" href="./index.html" lang="en">MakEnergy</a>
 
                     <ul class="nav-list">
-                        <li class="nav-list__item"><a class="nav-list__link" href="#">Про нас</a></li>
-                        <li class="nav-list__item"><a class="nav-list__link" href="#">Наша станція</a></li>
-                        <!-- <li class="nav-list__item"><a class="nav-list__link" href="#">Інформація</a></li> -->
-                        <li class="nav-list__item"><a class="nav-list__link" href="#contacts">Контакти</a></li>
+                        <li class="nav-list__item"><a data-nav_go_to="#about" class="nav-list__link js-nav" href="#">Про нас</a></li>
+                        <li class="nav-list__item"><a data-nav_go_to="#our-station" class="nav-list__link js-nav" href="#">Наша станція</a></li>
+                        <!-- <li class="nav-list__item"><a data-nav_go_to="#portfolio" class="nav-list__link js-nav" href="#">Інформація</a></li> -->
+                        <li class="nav-list__item"><a data-nav_go_to="#contacts" class="nav-list__link js-nav" href="#">Контакти</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,33 +42,52 @@
         <section class="hero">
             <div class="hero-cont">
                 <h1 class="hero__title">ТОВ "МакЕнерджі"</h1>
-                <p class="hero__descr">клепле електрику із сонця і се є Ефективні рішення для вашого бізнесу</p>
+                <p class="hero__descr"> Зелений шлях до енергетичної незалежності - створений з любов'ю до нашої планети.
+                    Створімо разом світле та чисте енергетичне майбутнє!
+                </p>
             </div>
         </section>
     </div>
 
     <main>
 
-        <section class="section">
+        <section class="section" id="about">
             <div class="container">
                 <h2 class="title"> Про нас</h2>
-                <p>Фірма заснована в 1999 році і робить до сьогодні</p>
+                <p class="about-descr">
+                    МакЕнерджі – це компанія, яка спеціалізується на виробництві електроенергії з використанням
+                    сонячної енергії. Ми зосереджені на виробництві чистої
+                    та стабільної електроенергії, використовуючи передові технології та сучасне обладнання.
+                </p>
+                <p class="about-descr">
+                    Наша діяльність полягає у виробництві зеленої енергії, яка не лише забезпечує електропостачання, а й сприяє захисту довкілля. Ми
+                    віримо, що в
+                    майбутньому сонячна енергія стане ключовим джерелом електроенергії, і саме тому ми працюємо, щоб зробити її доступною для всіх.
+                </p>
+                <p class="about-descr">
+                    Наша мета - не просто створювати електроенергію, але і робити це ефективно та відповідально перед навколишнім середовищем.
+
+                    МакЕнерджі — це не просто виробник електрики, але і прихильник чистого майбутнього. Приєднуйтесь до нас у подорожі до створення
+                    світлого та екологічно
+                    чистого енергетичного майбутнього разом!
+
+                </p>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="our-station">
             <div class="container">
                 <h2 class="title"> Наша станція</h2>
 
                 <div class="splide" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide"><img class="splide__img" src="./img/about/1.jpg" alt=""></li>
-                            <li class="splide__slide"><img class="splide__img" src="./img/about/2.jpg" alt=""></li>
-                            <li class="splide__slide"><img class="splide__img" src="./img/about/3.jpg" alt=""></li>
-                            <li class="splide__slide"><img class="splide__img" src="./img/about/4.jpg" alt=""></li>
-                            <li class="splide__slide"><img class="splide__img" src="./img/about/5.jpg" alt=""></li>
-                            <li class="splide__slide"><img class="splide__img" src="./img/about/6.jpg" alt=""></li>
+                            <li class="splide__slide"><img class="splide__img" src="./img/about/1.jpg" alt="фото сонячної станції та обладнання"></li>
+                            <li class="splide__slide"><img class="splide__img" src="./img/about/2.jpg" alt="фото сонячної станції та обладнання"></li>
+                            <li class="splide__slide"><img class="splide__img" src="./img/about/3.jpg" alt="фото сонячної станції та обладнання"></li>
+                            <li class="splide__slide"><img class="splide__img" src="./img/about/4.jpg" alt="фото сонячної станції та обладнання"></li>
+                            <li class="splide__slide"><img class="splide__img" src="./img/about/5.jpg" alt="фото сонячної станції та обладнання"></li>
+                            <li class="splide__slide"><img class="splide__img" src="./img/about/6.jpg" alt="фото сонячної станції та обладнання"></li>
                         </ul>
                     </div>
                 </div>
@@ -77,14 +96,17 @@
         </section>
 
     </main>
-    <footer class="footer">
+
+
+
+    <footer class="footer" id="contacts">
         <div class="container footer-cont">
 
             <a class="logo logo-footer" href="./index.html" lang="en">MakEnergy</a>
 
-            <div class="contects-cont">
+            <div class="contact-cont">
 
-                <h2 class="footer-title">Контакти</h2>
+                <h3 class="footer-title">Контакти</h3>
                 <ul class="contact-list">
                     <li class="contact-list__item">
                         <a class="contact-list__contact" href="mailto:mak.energy.uzh@gmail.com">
@@ -124,9 +146,11 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" type="module"></script>
 
-    <script src="./js/slider.js"></script>
+    <script src="./js/slider.js" type="module"></script>
+
+    <script src="./js/pageNav.js" type="module"></script>
 
 
 </body>

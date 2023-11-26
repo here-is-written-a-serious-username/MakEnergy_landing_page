@@ -97,6 +97,15 @@ label {
   display: block;
 }
 
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .title {
   margin-bottom: 32px;
   text-align: center;
@@ -138,15 +147,6 @@ label {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 30px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .nav-list {
@@ -216,6 +216,16 @@ label {
   font-weight: 500;
 }
 
+.about-descr {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: justify;
+}
+.about-descr + .about-descr {
+  margin-top: 8px;
+}
+
 .splide__img {
   width: 100%;
   aspect-ratio: 1.6;
@@ -235,13 +245,57 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer-title {
+  margin-bottom: 22px;
+}
+@media screen and (max-width: 767px) {
+  .footer-title {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-list__item {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-list__item {
+    font-size: 18px;
+  }
+}
+.contact-list__item + .contact-list__item {
+  margin-top: 18px;
 }
 
 .contact-list__icon,
 .location__icon {
+  margin-right: 8px;
   fill: #ffffff;
 }
 
-.location-cont {
-  margin-left: auto;
+.location-title {
+  margin-bottom: 18px;
+}
+@media screen and (max-width: 767px) {
+  .location-title {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .location-title {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,10 @@
- .splide__img {
-     width: 100%;
-     aspect-ratio: 1.6;
-     object-fit: cover;
-     object-position: right top;
- }
+.about-descr {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: justify;
+
+    &+& {
+        margin-top: 8px;
+    }
+}
