@@ -1,0 +1,34 @@
+.footer {
+    color: $secondary-color;
+    padding: 48px 0;
+    background-color: $background-dark;
+}
+
+.footer-cont {
+    display: flex;
+    // flex-wrap: wrap;
+    // align-items: center;
+}
+
+.logo-footer {
+    // color: $secondary-color;
+}
+
+.footer-title {
+    // color: $secondary-color;
+}
+
+.contact-list__contact {
+    // color: $secondary-color;
+}
+
+.contact-list__icon,
+.location__icon {
+    fill: $secondary-color;
+}
+
+.location-cont {
+    margin-left: auto;
+}
+
+.location-title {}

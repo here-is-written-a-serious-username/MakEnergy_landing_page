@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous"
@@ -41,8 +41,8 @@
 
         <section class="hero">
             <div class="hero-cont">
-                <h1 class="hero-title">ТОВ <span lang="en">"МакЕнерджі"</span> клепле електрику із сонця і се є Ефективні рішення для вашого бізнесу
-                </h1>
+                <h1 class="hero__title">ТОВ "МакЕнерджі"</h1>
+                <p class="hero__descr">клепле електрику із сонця і се є Ефективні рішення для вашого бізнесу</p>
             </div>
         </section>
     </div>
@@ -77,28 +77,49 @@
         </section>
 
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="container footer-cont">
 
-        <a class="logo" href="./index.html" lang="en">MakEnergy</a>
+            <a class="logo logo-footer" href="./index.html" lang="en">MakEnergy</a>
 
-        <ul class="contact-list">
-            <li class="contact-list__item">
-                <a class="contact-list__contact" href="mailto:info@devstudio.com">
-                    <!-- <svg class="contact-list__icon contact-list__icon-email" width="16" height="12">
-                                            <use href="./img/sprite.svg#envelope"></use>
-                                        </svg> -->
-                    info@.com
-                </a>
-            </li>
-            <li class="contact-list__item">
-                <a class="contact-list__contact" href="tel:+380961111111">
-                    <!-- <svg class="contact-list__icon contact-list__icon-tell" width="10" height="16">
-                                            <use href="./img/sprite.svg#smartphone"></use>
-                                        </svg> -->
-                    +38 096 111 11 11
-                </a>
-            </li>
-        </ul>
+            <div class="contects-cont">
+
+                <h2 class="footer-title">Контакти</h2>
+                <ul class="contact-list">
+                    <li class="contact-list__item">
+                        <a class="contact-list__contact" href="mailto:mak.energy.uzh@gmail.com">
+                            <svg class="contact-list__icon" width="14" height="14">
+                                <use href="./img/svg/symbol-defs.svg#icon-envelop"></use>
+                            </svg>
+                            mak.energy.uzh@gmail.com
+                        </a>
+                    </li>
+                    <li class="contact-list__item">
+                        <a class="contact-list__contact" href="tel:+380503722605">
+                            <svg class="contact-list__icon" width="14" height="14">
+                                <use href="./img/svg/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                            +38 050 372 26 05
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="location-cont">
+                <p class="location-title">
+                    <svg class="location__icon" width="14" height="14">
+                        <use href="./img/svg/symbol-defs.svg#icon-location"></use>
+                    </svg>
+                    Ми на карті
+                </p>
+                <!-- <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d808.9399717139739!2d22.84377470674983!3d48.11950624260446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suk!2sua!4v1701030011164!5m2!1suk!2sua"
+                    width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1617.8989545880484!2d22.84332438876334!3d48.11890256872917!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suk!2sua!4v1701030970051!5m2!1suk!2sua"
+                    width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
 
     </footer>
 

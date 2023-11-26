@@ -14,6 +14,8 @@ html {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  color: #212121;
+  background-color: #F5F4FA;
   height: 100%;
 }
 
@@ -52,8 +54,8 @@ a {
 }
 @media screen and (min-width: 1230px) {
   .section {
-    padding-top: 124px;
-    padding-bottom: 124px;
+    padding-top: 102px;
+    padding-bottom: 102px;
   }
 }
 
@@ -96,19 +98,19 @@ label {
 }
 
 .title {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   text-align: center;
   font-weight: 700;
-  line-height: 1.1904761905;
+  line-height: 1.2;
 }
 @media screen and (max-width: 767px) {
   .title {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .title {
-    font-size: 42px;
+    font-size: 36px;
   }
 }
 
@@ -140,7 +142,7 @@ label {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-size: 28px;
+  font-size: 30px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -166,6 +168,7 @@ label {
 }
 
 .hero {
+  background-color: #C4C4C4;
   background-image: url(../img/hero/sun0077.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,9 +196,24 @@ label {
   border-radius: 15px;
 }
 
-.hero-title {
-  font-size: 24px;
+.hero__title {
+  margin-bottom: 8px;
   font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .hero__title {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 36px;
+  }
+}
+
+.hero__descr {
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .splide__img {
@@ -205,4 +223,25 @@ label {
      object-fit: cover;
   -o-object-position: right top;
      object-position: right top;
+}
+
+.footer {
+  color: #ffffff;
+  padding: 48px 0;
+  background-color: #212020;
+}
+
+.footer-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-list__icon,
+.location__icon {
+  fill: #ffffff;
+}
+
+.location-cont {
+  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */

@@ -11,8 +11,8 @@ html {
 body {
     margin: 0;
     font-family: $main-font;
-    // color: $main-dark-color;
-    // background-color: $main-light-color;
+    color: $main-color;
+    background-color: $main-background-color;
     height: 100%;
 }
 
@@ -50,8 +50,8 @@ a {
     }
 
     @media screen and (min-width: 1230px) {
-        padding-top: 124px;
-        padding-bottom: 124px;
+        padding-top: 102px;
+        padding-bottom: 102px;
     }
 }
 

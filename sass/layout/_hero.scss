@@ -3,6 +3,7 @@
 }
 
 .hero {
+    background-color: $background-light;
     background-image: url(../img/hero/sun0077.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,9 +27,23 @@
     border-radius: 15px;
 }
 
-.hero-title {
-    font-size: 24px;
+.hero__title {
+    margin-bottom: 8px;
+
     font-weight: 700;
+
+    @media screen and (max-width: 767px) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 36px;
+    }
+}
+
+.hero__descr {
+    font-size: 24px;
+    font-weight: 500;
 }
 
 
