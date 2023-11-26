@@ -95,11 +95,28 @@ label {
   display: block;
 }
 
+.title {
+  margin-bottom: 36px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.1904761905;
+}
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 42px;
+  }
+}
+
 .header {
   position: absolute;
   z-index: 1;
   top: 0;
-  padding: 40px 0;
+  padding: 36px 0;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(230, 230, 230, 0.8)), to(rgba(230, 230, 230, 0.4)));
   background: linear-gradient(rgba(230, 230, 230, 0.8), rgba(230, 230, 230, 0.4));
@@ -179,4 +196,13 @@ label {
 .hero-title {
   font-size: 24px;
   font-weight: 700;
+}
+
+.splide__img {
+  width: 100%;
+  aspect-ratio: 1.6;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right top;
+     object-position: right top;
 }/*# sourceMappingURL=main.css.map */
