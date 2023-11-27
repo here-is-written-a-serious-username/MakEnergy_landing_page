@@ -49,10 +49,18 @@
 }
 
 
-// .contact-list__contact {
-//     font-weight: 500;
-//     font-size: 18px;
-// }
+.contact-list__contact {
+
+    &:hover,
+    :focus {
+        color: $accent-color;
+
+        .contact-list__icon,
+        .location__icon {
+            fill: $accent-color;
+        }
+    }
+}
 
 .contact-list__icon,
 .location__icon {

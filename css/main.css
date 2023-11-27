@@ -162,6 +162,10 @@ label {
 .nav-list__link {
   font-size: 18px;
 }
+.nav-list__link:hover,
+.nav-list__link :focus {
+  color: #20b2aa;
+}
 
 .main-page {
   height: 100vh;
@@ -278,6 +282,17 @@ label {
 }
 .contact-list__item + .contact-list__item {
   margin-top: 18px;
+}
+
+.contact-list__contact:hover,
+.contact-list__contact :focus {
+  color: #20b2aa;
+}
+.contact-list__contact:hover .contact-list__icon,
+.contact-list__contact:hover .location__icon,
+.contact-list__contact :focus .contact-list__icon,
+.contact-list__contact :focus .location__icon {
+  fill: #20b2aa;
 }
 
 .contact-list__icon,
