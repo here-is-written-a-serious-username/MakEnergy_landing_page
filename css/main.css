@@ -285,13 +285,19 @@ label {
 }
 
 .contact-list__contact:hover,
-.contact-list__contact :focus {
+.contact-list__contact :focus,
+.location-title:hover,
+.location-title :focus {
   color: #20b2aa;
 }
 .contact-list__contact:hover .contact-list__icon,
 .contact-list__contact:hover .location__icon,
 .contact-list__contact :focus .contact-list__icon,
-.contact-list__contact :focus .location__icon {
+.contact-list__contact :focus .location__icon,
+.location-title:hover .contact-list__icon,
+.location-title:hover .location__icon,
+.location-title :focus .contact-list__icon,
+.location-title :focus .location__icon {
   fill: #20b2aa;
 }
 
@@ -301,7 +307,25 @@ label {
   fill: #ffffff;
 }
 
+.location-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .location-title {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   margin-bottom: 18px;
 }
 @media screen and (max-width: 767px) {
