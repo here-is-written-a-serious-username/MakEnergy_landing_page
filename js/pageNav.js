@@ -1,4 +1,9 @@
-// import { removeAllActiveClasses } from "./mobileMenu";
+console.log(1)
+
+import { removeAllActiveClasses } from "./mobileMenu";
+
+console.log(2)
+
 
 const navLinks = document.querySelectorAll('.js-nav');
 
@@ -11,6 +16,8 @@ const navLinks = document.querySelectorAll('.js-nav');
 function onNavLinkClick(e) {
     e.preventDefault();
 
+    console.log(3)
+
     const navLink = e.target;
     const goToSection = document.querySelector(navLink.dataset.nav_go_to);
 
@@ -19,7 +26,7 @@ function onNavLinkClick(e) {
 
         scroll(goToSectionValue);
 
-        // removeAllActiveClasses();
+        removeAllActiveClasses();
     }
 }
 
@@ -29,3 +36,6 @@ function scroll(value) {
         behavior: "smooth",
     });
 };
+
+
+console.log(4)

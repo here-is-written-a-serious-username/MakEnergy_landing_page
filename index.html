@@ -29,12 +29,17 @@
                 <nav class="header-nav">
                     <a class="logo" href="./index.html" lang="en">MAK ENERGY</a>
 
-                    <ul class="nav-list">
+                    <ul class="nav-list" id="mobil-menu">
                         <li class="nav-list__item"><a data-nav_go_to="#about" class="nav-list__link js-nav" href="#">Про нас</a></li>
                         <li class="nav-list__item"><a data-nav_go_to="#our-station" class="nav-list__link js-nav" href="#">Наша станція</a></li>
                         <!-- <li class="nav-list__item"><a data-nav_go_to="#portfolio" class="nav-list__link js-nav" href="#">Інформація</a></li> -->
                         <li class="nav-list__item"><a data-nav_go_to="#contacts" class="nav-list__link js-nav" href="#">Контакти</a></li>
                     </ul>
+
+                    <button aria-expanded="false" aria-controls="mobil-menu" aria-label="open or close the mobile menu"
+                        class="btn-mobil-menu js-toggle-mobil-menu"><span class="btn-burger"></span>
+                    </button>
+
                 </nav>
             </div>
         </header>
@@ -145,7 +150,7 @@
                     width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1617.8989545880484!2d22.84332438876334!3d48.11890256872917!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suk!2sua!4v1701030970051!5m2!1suk!2sua"
-                    width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    class="footer-map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
 
@@ -156,7 +161,11 @@
 
     <script src="./js/slider.js" type="module"></script>
 
+    <script src="./js/mobileMenu.js" type="module"></script>
+
     <script src="./js/pageNav.js" type="module"></script>
+
+
 
 
 </body>
