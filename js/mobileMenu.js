@@ -10,7 +10,6 @@ btnMobilMenu.addEventListener('click', toggleMenu);
 window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
     removeAllActiveClasses()
-    btnMobilMenu.setAttribute('aria-expanded', false);
 });
 
 function toggleMenu() {
@@ -28,7 +27,10 @@ function removeAllActiveClasses() {
     MobilMenu.classList.remove('is-open');
     document.body.classList.remove("modal-open");
     btnMobilMenu.classList.remove('btn-active');
+    btnMobilMenu.setAttribute('aria-expanded', false);
 }
 
 export { removeAllActiveClasses };
-console.log(5)
+
+
+// треба перейменувати removeAllActiveClasses бо сетатрібут невписується в цю назву

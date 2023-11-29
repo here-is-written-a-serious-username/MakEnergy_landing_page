@@ -19,4 +19,12 @@ const slider = new Splide(sliderElm, {
     pauseOnFocus: true,
     keyboard: 'global',
 
+    breakpoints: {
+        767: {
+            perPage: 1,
+            gap: '0rem',
+            padding: '0rem',
+        },
+    },
+
 }).mount();
