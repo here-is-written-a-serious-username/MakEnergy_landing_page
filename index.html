@@ -10,13 +10,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
+        referrerpolicy="no-referrer">
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-sea-green.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/main.min.css">
+
     <title>MakEnergy</title>
 
 </head>
@@ -27,7 +28,7 @@
         <header class="header">
             <div class="container">
                 <nav class="header-nav">
-                    <a class="logo" href="./index.html" lang="en">MAK ENERGY</a>
+                    <a class="logo header-logo" href="./index.html" lang="en">MAK ENERGY</a>
 
                     <ul class="nav-list" id="mobil-menu">
                         <li class="nav-list__item"><a data-nav_go_to="#about" class="nav-list__link js-nav" href="#">Про нас</a></li>
@@ -90,9 +91,9 @@
             <div class="container">
                 <h2 class="title"> Наша станція</h2>
 
-                <div class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide" aria-label="слайдер фотографій станції МАК ЕНЕРДЖІ">
                     <div class="splide__track">
-                        <ul class="splide__list">
+                        <ul class="splide__list gallery">
                             <li class="splide__slide"><img class="splide__img" src="./img/about/1.jpg" alt="фото сонячної станції та обладнання"></li>
                             <li class="splide__slide"><img class="splide__img" src="./img/about/2.jpg" alt="фото сонячної станції та обладнання"></li>
                             <li class="splide__slide"><img class="splide__img" src="./img/about/3.jpg" alt="фото сонячної станції та обладнання"></li>
@@ -107,8 +108,6 @@
         </section>
 
     </main>
-
-
 
     <footer class="footer" id="contacts">
         <div class="container footer-cont">
@@ -159,23 +158,17 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" type="module"></script>
-
     <script src="./js/slider.js" type="module"></script>
 
     <script type="module" src="./js/mobileMenu.js"></script>
 
     <script type="module" src="./js/pageNav.js"></script>
 
-
+    <script type="module" src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <script type="module" src="./js/fullScreenPhoto.js"></script>
 
 
 </body>
-
-
-
-
-
-
 
 
 </html>
