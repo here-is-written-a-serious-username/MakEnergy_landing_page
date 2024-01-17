@@ -1,4 +1,4 @@
-import { removeAllActiveClasses } from "./mobileMenu.js";
+import { resetMobileMenuAndAriaState } from "./mobileMenu.js";
 
 const navLinks = document.querySelectorAll('.js-nav');
 
@@ -19,7 +19,7 @@ function onNavLinkClick(e) {
 
         scroll(goToSectionValue);
 
-        removeAllActiveClasses();
+        resetMobileMenuAndAriaState();
     }
 }
 

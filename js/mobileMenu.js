@@ -1,11 +1,7 @@
-
-
 const btnMobilMenu = document.querySelector('.js-toggle-mobil-menu');
 const MobilMenu = document.querySelector('#mobil-menu');
 
-
 btnMobilMenu.addEventListener('click', toggleMenu);
-
 
 window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
@@ -22,15 +18,11 @@ function toggleMenu() {
     btnMobilMenu.classList.toggle('btn-active');
 }
 
-
-function removeAllActiveClasses() {
+function resetMobileMenuAndAriaState() {
     MobilMenu.classList.remove('is-open');
     document.body.classList.remove("modal-open");
     btnMobilMenu.classList.remove('btn-active');
     btnMobilMenu.setAttribute('aria-expanded', false);
 }
 
-export { removeAllActiveClasses };
-
-
-// треба перейменувати removeAllActiveClasses бо сетатрібут невписується в цю назву
+export { resetMobileMenuAndAriaState };

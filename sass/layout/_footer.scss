@@ -69,15 +69,16 @@
 
 .contact-list__contact,
 .location-title {
+    transition: color 250ms linear;
 
     &:hover,
     :focus {
         color: $accent-color;
+    }
 
-        .contact-list__icon,
-        .location__icon {
-            fill: $accent-color;
-        }
+    .contact-list__icon,
+    .location__icon {
+        fill: currentColor;
     }
 }
 
